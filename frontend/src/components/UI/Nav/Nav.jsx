@@ -1,5 +1,7 @@
 import React from "react";
 import classes from "./Nav.module.css";
+import {Link} from "react-router-dom";
+import HomeComponent from "../../Home/HomePage";
 // import logo from "../../../assets/logo.png";
 const NavBar = (props) => {
   const handleDarkModeToggle = (e) => {
@@ -18,10 +20,10 @@ const NavBar = (props) => {
     <React.Fragment>
       <div className={classes["nav-bar"]}>
         {
-         <div className={classes["nav-bar-logo"]}>
-         {/* <img src={logo} alt="" /> */}
-          Stream<span className={classes["gradient-span"]}>Sight</span>
-        </div> 
+            <div className={classes["nav-bar-logo"]}>
+              {/* <img src={logo} alt="" /> */}
+              Stream<span className={classes["gradient-span"]}>Sight</span>
+            </div>
         }
         <div className={classes["nav-bar-links"]}>
           <div className={classes.buttons} onClick={props.onAskIt}>

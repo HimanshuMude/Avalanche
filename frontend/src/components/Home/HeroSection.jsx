@@ -36,7 +36,7 @@ const HeroSectionComponent = (props) => {
           <p>
             Discover the smarter way to explore Youtube videos with our advance transcription technology. You can teach and learn from your own bot and get instant answer to your video queries. Plus we are always working on new updates and features to make your video exploration even better. Stay tuned!
           </p>
-          <button className={classes.buttons}>Try Now</button>
+          {/* <button className={classes.buttons}>Try Now</button> */}
         </div>
         <div className={classes["image-container"]}>
           <img src={heroImage} alt="" height="500px"/>
