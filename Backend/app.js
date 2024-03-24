@@ -11,12 +11,12 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/api", transScriptRouter);
 app.get("/inactive", (req, res) => {
-  res.send("ok");
+  res.json({ message: "Activated" });
 });
 
-setInterval(function() {
+setInterval(function () {
   // do something here or leave it as it is
-  console.log('INTERVAL',new Date().toLocaleString());
+  console.log('INTERVAL', new Date().toLocaleString());
   fetch('http:localhost:5000/inactive')
 }, 300000)
 
