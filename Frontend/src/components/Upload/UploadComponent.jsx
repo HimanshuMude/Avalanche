@@ -37,7 +37,7 @@ const UploadComponent = (props) => {
       setSuccess(null);
       // Set the origin header to your server's domain
       const response = await axios.post(
-        "https://avalanche-ffp5.onrender.com/api/transcript",
+        "https://avalanche-mp2k.onrender.com/api/transcript",
         {
           url: enteredLink,
         }
